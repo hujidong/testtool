@@ -20,10 +20,10 @@ func GetIp() {
 	}
 	log.Println(host)
 }
-func GetHostName() {
+func GetHostName(s string) {
 	hostname, err := os.Hostname()
 	if err != nil {
 		log.Println("os.HostName.err: ", err)
 	}
-	log.Println(hostname)
+	log.Println(hostname + s)
 }
