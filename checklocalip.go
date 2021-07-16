@@ -3,6 +3,7 @@ package testtool
 import (
 	"log"
 	"net"
+	"os"
 )
 
 func GetIp() {
@@ -18,4 +19,11 @@ func GetIp() {
 		log.Println("net.SplitHostPort.err：", err)
 	}
 	log.Println(host)
+}
+func GetHostName() {
+	hostname, err := os.Hostname()
+	if err != nil {
+		log.Println("os.HostName.err: ", err)
+	}
+	log.Println(hostname)
 }
