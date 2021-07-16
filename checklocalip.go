@@ -1,4 +1,4 @@
-package TestTool
+package testtool
 
 import (
 	"log"
