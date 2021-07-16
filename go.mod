@@ -1,3 +1,3 @@
-module github.com/hujidong/testtool/v2
+module github.com/hujidong/testtool
 
 go 1.16
